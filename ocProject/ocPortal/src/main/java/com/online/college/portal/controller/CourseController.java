@@ -123,7 +123,7 @@ public class CourseController {
 		UserCourseSection userCourseSection = new UserCourseSection();
 		userCourseSection.setUserId(SessionContext.getUserId());
 		userCourseSection.setCourseId(courseSection.getCourseId());
-		userCourseSection.setSectionId(courseSection.getId());
+		//userCourseSection.setSectionId(courseSection.getId());
 		UserCourseSection result = userCourseSectionService.queryLatest(userCourseSection);
 		
 		if(null == result){//如果没有，插入
@@ -135,6 +135,7 @@ public class CourseController {
 			userCourseSectionService.createSelectivity(userCourseSection);
 		}else{
 			result.setUpdateTime(new Date());
+			result.setSectionId(courseSection.getId());
 			userCourseSectionService.update(result);
 		}
 		return mv;
