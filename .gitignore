@@ -1,0 +1,17 @@
+/bin/
+/target/
+
+*.class
+
+#package file
+
+*.war
+*.ear
+
+*.orig
+
+target/
+
+.settings/
+.project
+.classpath
