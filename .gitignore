@@ -1,17 +1,10 @@
-/bin/
-/target/
 
-*.class
-
-#package file
-
-*.war
-*.ear
-
-*.orig
-
-target/
-
-.settings/
-.project
+*/.settings/
 .classpath
+.project
+.settings/
+*/.gitignore
+*.class
+*.log
+*/target/
+*/logs/
