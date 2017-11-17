@@ -122,6 +122,7 @@ public class CourseController {
 		ModelAndView mv = new ModelAndView("cms/course/read");
 		mv.addObject("curNav", "course");
 		mv.addObject("course", course);
+		mv.addObject("courseId", id);
 		
 		//课程章节
 		List<CourseSectionVO> chaptSections = this.portalBusiness.queryCourseSection(id);

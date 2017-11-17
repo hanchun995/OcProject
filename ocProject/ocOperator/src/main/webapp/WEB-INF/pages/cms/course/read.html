@@ -259,7 +259,7 @@
 			if(type == 1){
 				elId = 'qa';
 			}
-			var url = '${s.base}/courseComment/pagelist.html';
+			var url = '${s.base}/courseComment/pagelist.html?id=${courseId}';
 			$("#" + elId).load(
 				url,
 				{'courseId':courseId,'type':type,'pageNum':1},
