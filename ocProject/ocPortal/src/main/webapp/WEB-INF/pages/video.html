@@ -16,10 +16,12 @@
 			<div class="main-course-left">
 					<div class="course-info">
 						<div class="course-title" style="font-size: 24px;">${(courseSection.name)!}</div>
-						
-						<div class="course-video">
+				<!--<div class="course-video">
 							<video src="${s.base}/res/demo.mp4" width="100%" height="100%" controls preload></video>
 						</div>
+						 -->
+						<!--嵌入优酷视频链接  -->
+							<iframe height=498 width=890 src='${courseSection.videoUrl}' frameborder=0 allowfullscreen='true'/></iframe>
 						
 						<div  class="course-menu">
 							<a  href="javascript:void(0)" >
